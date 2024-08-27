@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無線能耗足跡管理方案</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .card {
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarges the card on hover */
+        }
+        .card-img-top {
+            width: 100%; /* Full width */
+            height: 200px; /* Fixed height */
+            object-fit: contain; /* Ensures the image fits without cropping */
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+   
+        .back-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #218838; /* 更深的綠色 */
+        }
+        p {
+            text-align: justify;
+        }
+        .row {
+    margin-top: 20px; /* 已存在的設定 */
+    margin-bottom: 40px; /* 新增底部間隔 */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>無線能耗足跡管理方案 (Wireless EMS Solution)</h1>
+    </header>
+
+    <div class="container">
+       <h2> 無線能耗足跡管理方案 (Wireless EMS Solution)：</h2>
+       為可持續發展鋪路
+在當今快速變化的世界中，企業和組織正面臨著日益增加的壓力，要求他們不僅提高能效，同時也需減少環境影響。無線能耗足跡管理方案（Wireless EMS Solution）因其提供一種節能減排的高效方法而越來越受到關注。這種方案利用最新的無線技術來監控和管理能源使用，使能源管理變得更為智能化和自動化。
+
+<H4>1. 無線能耗管理的核心技術</H4>
+無線能耗管理系統（EMS）核心在於其無線傳感技術，這使得系統可以在不需要布線的情況下實時收集能源消耗數據。這一點對於那些難以進行物理布線或需要靈活移動傳感器位置的現場來說尤其重要。此外，這些無線傳感器常配備有自身的電源供應，如太陽能板，進一步降低了系統的能耗和維護成本。
+
+<h4>2. 數據收集與分析</h4>
+收集到的數據通過無線網絡傳輸至中央監控系統，這裡的數據不僅僅用於監控，更重要的是用於分析和優化能源使用。利用先進的數據分析工具，無線EMS能夠識別出能源浪費的關鍵區域，提供節能建議，甚至自動調整設備設置以實現最優能源效率。
+
+<h4>3. 增強的使用者界面</h4>
+現代的無線EMS提供了直觀的用戶界面，使得管理人員能夠輕鬆查看和理解能源消耗模式。這些界面通常是可定制的，並能在智能手機、平板電腦或電腦上訪問，增強了操作的便捷性和靈活性。此外，這些系統通常包括警報系統，當能耗異常時，它會及時通知管理人員，從而迅速采取措施解決問題。
+
+<h4>4. 環境影響和可持續性</h4>
+採用無線EMS的最大好處之一是它對環境的積極影響。通過優化能源使用和減少浪費，這些系統有助於顯著降低企業的碳足跡。此外，隨著全球對減少溫室氣體排放的關注不斷增加，無線EMS也成為企業達到其環境目標的重要工具。
+
+<h4>5. 總結</h4>
+無線能耗足跡管理方案為企業提供了一個創新的工具，以更高效、更環保的方式管理和優化能源使用。隨著技術的持續發展和成本的進一步降低，預計無線EMS將在全球範圍內得到更廣泛的應用，為推動可持續發展和應對氣候變化貢獻重要力量。
+
+此方案不僅提升了能效，還助力企業在環保和可持續發展方面取得實質進展，是企業社會責任實踐中不可或缺的一部分。隨著更多企業意識到這一點，無線能耗管理方案的應用將更加普及，為建設綠色未來奠定堅實基礎。
+
+
+        <h2>方案介紹</h2>
+        <p>
+            隨著全球能源消耗持續增長和環保法規日益嚴格，企業迫切需要採用創新的能源管理解決方案以提高能效並降低運營成本。無線能耗足跡管理方案（Wireless EMS Solution）正是為此目的而生，它利用先進的無線通訊技術來監控和管理各種能源消耗，從而幫助企業實現綠色可持續發展。
+
+<h4>核心特點</h4>
+實時監控和控制： 無線 EMS 利用多點無線傳感器網絡實時收集各類能源使用數據，包括電力、水、氣等。這些數據經無線方式傳輸至中央監控系統，使能源管理更加透明化和實時化。
+
+數據分析和報告： 系統提供強大的數據分析工具，不僅可以追踪和分析能源消耗模式，還能自動生成能耗報告和效率分析。這有助於識別節能機會，實施節能措施，並評估節能成效。
+
+節能優化： 根據收集的數據，無線 EMS 可以提出節能建議並自動調整設備運行參數，如調節空調溫度、照明強度等，以達到最佳能源利用效率。
+
+靈活性和擴展性： 無線系統的部署簡便，不需大規模布線工程，且易於擴展。這使得無線 EMS 不僅適用於新建設施，也適合於現有建築的能源改造。
+
+環境監測與合規： 系統還可以監測環境參數，如溫度、濕度和空氣質量，幫助企業遵守相關的環境法規和標準。
+
+<h4>應用場景</h4>
+商業建築：無線 EMS 可用於辦公大樓、購物中心、酒店等商業設施，以優化能源消耗並降低運營成本。
+工業廠房：在製造業和其他重工業領域，無線 EMS 可以幫助企業精確監控生產線的能耗，提高能源使用效率。
+公共設施：如學校、醫院和政府建築，無線 EMS 有助於實現節能目標並保持良好的環境質量。
+<h4>總結</h4>
+無線能耗足跡管理方案代表了能源管理的未來趨勢，它不僅能提升能源使用的透明度和效率，還能助力企業在追求經濟利益的同時貢獻於環保事業。隨著技術的進步和成本的進一步降低，無線 EMS 預計將在全球範圍內得到更廣泛的應用，為企業和社會創造更多價值。
+
+
+
+
+
+
+
+        </p>
+        <h2>產品組合</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Cards with uniform image sizes and card height -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06</h5>
+                        <p class="card-text">GW06 (藍芽對WiFi 2.4G) Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-03.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-03/GW08-03</h5>
+                        <p class="card-text">GW06-03/GW08-03 藍芽 對Modbus TCP Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW08.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW08-03</h5>
+                        <p class="card-text">GW08 窄頻1G 對 wifi 2.4G Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/RP01.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">RP01</h5>
+                        <p class="card-text">RP01 (藍芽對窄頻配合GW08) Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM02.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM02</h5>
+                        <p class="card-text">CM02 (交流0.6A 到100A Dia. 16mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM03.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM03</h5>
+                        <p class="card-text">CM03 (交流 2A到250A Dia.24mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM04.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM04</h5>
+                        <p class="card-text">CM04 (交流 3A到350A Dia.24mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM02-04.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM02-04</h5>
+                        <p class="card-text">CM02-04(交流 0.05A到15A Dia.16mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM02-06.png?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM02-06</h5>
+                        <p class="card-text">CM02-06(交流 0.001A到0.5A Dia.16mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/FM03.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">FM02</h5>
+                        <p class="card-text">FM02(交流2A到1000A Dia.80mm)軟線鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/FM03.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">FM03</h5>
+                        <p class="card-text">FM03(交流3A到2000A Dia.105mm)軟線鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/FM03.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">FM04</h5>
+                        <p class="card-text">FM04(交流5A到3000A Dia.180mm)軟線鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM03-05.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM03-05</h5>
+                        <p class="card-text">CM03-05(交流2A到250A Dia.24mm)環溫與電流</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM04-05.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM04-05</h5>
+                        <p class="card-text">CM04-05(交流3A到350A Dia.36mm)環溫與電流</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/CM02-07.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">CM02-07</h5>
+                        <p class="card-text">CM02-07(直流0.4A到20A Dia.16mm)鉤表</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/TM01.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">TM01</h5>
+                        <p class="card-text">TM01(溫度量測0~100°C) 溫度計</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-04.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-04/GW08-04 </h5>
+                        <p class="card-text">GW06-04/GW08-04 藍芽對WiFi/窄頻對WiFi2.4G/5G/乙太</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-06 </h5>
+                        <p class="card-text">GW06-06 (Modbus RTU to Modbus TCP) 特殊Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-06 </h5>
+                        <p class="card-text">GW06-06 (Modbus RTU to Modbus TCP) 特殊Gateway</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other products -->
+
+            <div class="container" style="margin-bottom: 40px;">
+                <!-- 內容 -->
+            </div>
+            
+        <h2>安裝現場</h2>
+        <BR><BR><BR><BR>
+        
+
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site%201.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">三麟印刷廠勘 </h5>
+                        <p class="card-text">有線無線方案綜合評估</p>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site2.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電冰水主機廠勘 </h5>
+                        <p class="card-text">新增冰水主機方案</p>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site3.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電冰水主機廠勘 </h5>
+                        <p class="card-text">新增冰水主機方案</p>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Sit4.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電冰水主機廠勘</h5>
+                        <p class="card-text">新增冰水主機方案</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site5.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電冰水主機廠勘 </h5>
+                        <p class="card-text">艾迪森光電冰水主機廠勘</p>
+                    </div>
+                </div>
+            </div>   
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site6.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">三麟印刷廠勘 </h5>
+                        <p class="card-text">有線無線方案綜合評估</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site7.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">三麟印刷廠勘 </h5>
+                        <p class="card-text">有線無線方案綜合評估</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site8.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">國創會 </h5>
+                        <p class="card-text">2024教育永續國際論壇暨嘉年華會</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site9.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">國創會 </h5>
+                        <p class="card-text">2024教育永續國際論壇暨嘉年華會</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site10.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電 </h5>
+                        <p class="card-text">無線安裝場勘</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site11.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">艾迪森光電 </h5>
+                        <p class="card-text">場勘指導</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site12.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">基隆中和國小 </h5>
+                        <p class="card-text">ESG方案評估</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site13.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">基隆中和國小</h5>
+                        <p class="card-text">ESG水表施工</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site14.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">基隆中和國小 </h5>
+                        <p class="card-text">ESG電盤安裝</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site15.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">基隆中和國小現勘 </h5>
+                        <p class="card-text">ESG安裝評估</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/Site16.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">基隆中和國小 </h5>
+                        <p class="card-text">ESG校園規劃</p>
+                    </div>
+                </div>
+            </div>   
+
+
+
+        </div>
+            
+            
+            
+            </p>
+   
+        <h2>文件下載</h2>
+      
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1ohQKaa6cFxwHB8?e=CpwrRy" class="btn btn-success btn-lg">無線EMS解決方案</a>
+        
+       
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOngatPesPbYD_qb-g?e=Z8GuNe"class="btn btn-success btn-lg" >UDM閘道器GW06-04 </a>
+          
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1uizFGzfZsC1PVE?e=F517A6" class="btn btn-success btn-lg">UDM產品行銷方案</a>
+       
+
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOngatPesPbYD_qb-g?e=Z8GuNe" class="btn btn-success btn-lg">閘道器GW06/08</a>
+    
+
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1_07W-aBbU-IJH5?e=0sbAKb" class="btn btn-success btn-lg">閘道器與TCP Modbus</a>
+                      
+        <p>Downloadable content...</p>
+        <h2>形象影片與產品介紹</h2>
+        <!DOCTYPE html>
+        <html lang="zh">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Video Layout</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                .videobox iframe {
+                    width: 100%;
+                    height: 250px; /* Adjust height as needed */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p><strong>景沛永續</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/xJxzwMIhQLA?si=HsDxLhELdbonXIdh" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p><strong>UDM 校園方案</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/ibvVb-dBdIM?si=ogR_4C0UyZoQ2Lfe" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <p><strong>UDM 智慧電表安裝</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/SfIOHA0uqew?si=_8_Iwsgf4NXQuSK7" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p><strong>UDM 智慧水表安裝</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/ibJKg4_-MfU?si=gpR07WQcCS-V5Z6B" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p><strong>三相電源雲端管理系統</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/OAlT24M9muE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>三相電源連結RS485</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/RoOzE9lyJ1c" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>三相智慧電表操作</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/t1wWHKrVr04" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>UDM ESG解決方案</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/R3s3l_Hr6tQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>UDM智能手機設定</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/iyKjvl0YfDs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>UDM 無線解決方案雲端管理</strong></p>
+                        <div class="videobox">
+                            <iframe src="https://www.youtube.com/embed/QiCgT0_Revc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                  
+                  
+
+                </div>
+            </div>
+        </body>
+        </html>
+        
+    </div>
+
+    <footer>
+        <a href="https://sethjesus.github.io/Maincarbon/Maincarbon.html" class="back-button">回首頁</a>
+        © 2024 由景沛低碳管理方案團隊製作
+    </footer>
+</body>
+</html>
