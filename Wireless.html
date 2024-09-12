@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>無線能耗足跡管理方案</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -42,12 +45,14 @@
             margin-top: 20px;
         }
         .card {
-            height: 100%;
+            width: 100%; /* 確保卡片佔據列的全部寬度 */
+            height: 100%; /* 確保卡片高度一致 */
             transition: transform 0.3s ease-in-out;
-        }
+}
         .card:hover {
-            transform: scale(1.05);
+           transform: scale(1.05);
         }
+
         .card-img-top {
             width: 100%;
             height: 200px;
@@ -99,6 +104,13 @@
         }
         li {
             margin-bottom: 10px;
+        }
+        .button-container {
+            text-align: center; /* 將內容置中 */
+            margin-top: 20px; /* 可選：增加上方空白 */
+        }
+        .btn-lg {
+            margin: 10px; /* 為按鈕間增加間距 */
         }
     </style>
 </head>
@@ -153,6 +165,27 @@
                     <div class="card-body">
                         <h5 class="card-title">GW06-03/GW08-03</h5>
                         <p class="card-text">GW06-03/GW08-03 藍芽 對Modbus TCP Gateway</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-04/GW08-04 </h5>
+                        <p class="card-text">BLE轉Wifi Sub-1G轉Wifi</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
+                    <div class="card-body">
+                        <h5 class="card-title">GW06-06 </h5>
+                        <p class="card-text">Modbus RTU 轉Modbus TCP</p>
                     </div>
                 </div>
             </div>
@@ -297,35 +330,10 @@
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-04.jpg?raw=true" class="card-img-top" alt="GW06">
-                    <div class="card-body">
-                        <h5 class="card-title">GW06-04/GW08-04 </h5>
-                        <p class="card-text">GW06-04/GW08-04 藍芽對WiFi/窄頻對WiFi2.4G/5G/乙太</p>
-                    </div>
-                </div>
-            </div>
+           
 
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
-                    <div class="card-body">
-                        <h5 class="card-title">GW06-06 </h5>
-                        <p class="card-text">GW06-06 (Modbus RTU to Modbus TCP) 特殊Gateway</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://github.com/Sethjesus/Photo/blob/main/GW06-06.jpg?raw=true" class="card-img-top" alt="GW06">
-                    <div class="card-body">
-                        <h5 class="card-title">GW06-06 </h5>
-                        <p class="card-text">GW06-06 (Modbus RTU to Modbus TCP) 特殊Gateway</p>
-                    </div>
-                </div>
-            </div>
+   
+            
             <!-- Repeat for other products -->
 
             <div class="container" style="margin-bottom: 40px;">
@@ -507,112 +515,123 @@
             </p>
    
         <h2>文件下載</h2>
-      
+        <p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Downloadable content...</p>
+        
+        <div class="button-container">
         <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1ohQKaa6cFxwHB8?e=CpwrRy" class="btn btn-success btn-lg">無線EMS解決方案</a>
         
        
-        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOngatPesPbYD_qb-g?e=Z8GuNe"class="btn btn-success btn-lg" >UDM閘道器GW06-04 </a>
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOnmP-4INtX-ESSqcF?e=g4bjC2"class="btn btn-success btn-lg" >UDM閘道器GW06 </a>
           
         <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1uizFGzfZsC1PVE?e=F517A6" class="btn btn-success btn-lg">UDM產品行銷方案</a>
        
 
         <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOngatPesPbYD_qb-g?e=Z8GuNe" class="btn btn-success btn-lg">閘道器GW06/08</a>
+
+        <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOnmSUmD4LM3RAFbWj?e=VZRfm6" class="btn btn-success btn-lg">閘道器安裝GW06</a>
     
 
         <a href="https://1drv.ms/b/s!Ag83-ZLdP_aOm1_07W-aBbU-IJH5?e=0sbAKb" class="btn btn-success btn-lg">閘道器與TCP Modbus</a>
+        </div>
                       
-        <p>Downloadable content...</p>
-        <h2>形象影片與產品介紹</h2>
+       
         <!DOCTYPE html>
-        <html lang="zh">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Video Layout</title>
-            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-            <style>
-                .videobox iframe {
-                    width: 100%;
-                    height: 250px; /* Adjust height as needed */
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <p><strong>景沛永續</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/xJxzwMIhQLA?si=HsDxLhELdbonXIdh" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p><strong>UDM 校園方案</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/ibvVb-dBdIM?si=ogR_4C0UyZoQ2Lfe" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <p><strong>UDM 智慧電表安裝</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/SfIOHA0uqew?si=_8_Iwsgf4NXQuSK7" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p><strong>UDM 智慧水表安裝</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/ibJKg4_-MfU?si=gpR07WQcCS-V5Z6B" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p><strong>三相電源雲端管理系統</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/OAlT24M9muE" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>三相電源連結RS485</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/RoOzE9lyJ1c" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>三相智慧電表操作</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/t1wWHKrVr04" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>UDM ESG解決方案</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/R3s3l_Hr6tQ" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>UDM智能手機設定</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/iyKjvl0YfDs" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>UDM 無線解決方案雲端管理</strong></p>
-                        <div class="videobox">
-                            <iframe src="https://www.youtube.com/embed/QiCgT0_Revc" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                  
-                  
-
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Layout</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .videobox iframe {
+            width: 100%;
+            height: 250px; /* 可以根據需要調整高度 */
+        }
+        h2 {
+            text-align: center; /* 使 h2 置中 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>形象影片與產品介紹</h2> <!-- 這裡的 h2 標題已經置中 -->
+        <div class="row row-cols-1 row-cols-md-4 g-4"> <!-- 使用 4x3 布局 -->
+            <div class="col">
+                <p><strong>景沛永續</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/xJxzwMIhQLA?si=HsDxLhELdbonXIdh" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-        </body>
-        </html>
+
+            <div class="col">
+                <p><strong>UDM 校園方案</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/ibvVb-dBdIM?si=ogR_4C0UyZoQ2Lfe" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>UDM 智慧電表安裝</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/SfIOHA0uqew?si=_8_Iwsgf4NXQuSK7" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>UDM 智慧水表安裝</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/ibJKg4_-MfU?si=gpR07WQcCS-V5Z6B" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>三相電源雲端管理系統</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/OAlT24M9muE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>三相電源連結RS485</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/RoOzE9lyJ1c" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>三相智慧電表操作</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/t1wWHKrVr04" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>UDM ESG解決方案</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/R3s3l_Hr6tQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>UDM智能手機設定</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/iyKjvl0YfDs" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p><strong>UDM 無線解決方案雲端管理</strong></p>
+                <div class="videobox">
+                    <iframe src="https://www.youtube.com/embed/QiCgT0_Revc" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+        
+
         
     </div>
 
