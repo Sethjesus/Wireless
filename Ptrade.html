@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Trade</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100%;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: #002244; /* 確保整個區域的背景顏色一致 */
+            overflow: hidden; /* 防止背景顏色外露 */
+        }
+        header img {
+            width: 50%; /* 調整寬度使圖片不那麼扁平 */
+            height: auto;
+            max-height: 280px; /* 調整最大高度 */
+            opacity: 0.5;
+            display: block;
+            margin: 0 auto; /* 使圖片置中 */
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: #ffffff;
+            white-space: nowrap; /* 防止標題換行 */
+        }
+        .slideshow-container {
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+        .slide {
+            display: none;
+            position: relative;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .slide-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+   
+        .back-button {
+            position: absolute;
+            top: 2px;
+            right: 30px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #218838; /* 更深的綠色 */
+        }
+        .ipc-button {
+    position: absolute;
+    top: 2px;
+    right: 150px; /* 調整這個值以確保按鈕位於頁腳的右邊 */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.ipc-button:hover {
+    background-color: #0056b3; /* 更深的藍色 */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://github.com/Sethjesus/Photo/blob/main/Bluewhale.jpg?raw=true" alt="藍鯨">
+        <h1>P-Trade</h1>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <div class="slide-number">1 / 4</div>
+            <img src="https://github.com/Sethjesus/Photo/blob/main/Ptrade1.jpg?raw=true" alt="圖片 1">
+        </div>
+        <div class="slide">
+            <div class="slide-number">2 / 4</div>
+            <img src="https://github.com/Sethjesus/Photo/blob/main/Ptrade2.jpg?raw=true" alt="圖片 2">
+        </div>
+        <div class="slide">
+            <div class="slide-number">3 / 4</div>
+            <img src="https://github.com/Sethjesus/Photo/blob/main/Ptrade3.jpg?raw=true" alt="圖片 3">
+        </div>
+        <div class="slide">
+            <div class="slide-number">4 / 4</div>
+            <img src="https://github.com/Sethjesus/Photo/blob/main/Ptrade4.jpg?raw=true" alt="圖片 4">
+        </div>
+
+        <!-- 前後導航按鈕 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <a href="https://sethjesus.github.io/Maincarbon/Maincarbon.html" class="back-button">回首頁</a>
+        <a href="https://your-ipc-link-here" class="ipc-button">進入 IPC 選項</a>
+        © 2024 由景沛低碳管理方案團隊製作
+    </footer>
+    
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
